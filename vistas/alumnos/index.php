@@ -16,7 +16,7 @@ $grados = $buscargrado->mostrarGrados();
 ?>
 <h1 class="text-center mt-3">Formulario para agregar Alumnos</h1>
 <div class="row justify-content-center mt-3">
-    <form action="" method="POST" class="border bg-light shadow rounded p-4 col-lg-6">
+    <form action="../../controladores/alumnos/guardar.php" method="POST" class="border bg-light shadow rounded p-4 col-lg-6">
         <div class="row mb-3">
             <div class="col">
                 <label for="alu_nombre">Nombre del Alumno</label>
@@ -30,8 +30,8 @@ $grados = $buscargrado->mostrarGrados();
             </div>
         </div>
         <div class="col">
-            <label for="alu_arma">Grado</label>
-            <select name="alu_arma" id="alu_arma" class="form-control" required>
+            <label for="alu_grado">Grado del Alumno</label>
+            <select name="alu_grado" id="alu_grado" class="form-control" required>
                 <option value="">SELECCIONE...</option>
                 <?php foreach ($grados as $grado) : ?>
                     <option value="<?= $grado['grad_id'] ?>"> <?= $grado['grad_nombre'] . ""  ?></option>
@@ -39,8 +39,8 @@ $grados = $buscargrado->mostrarGrados();
             </select>
         </div>
         <div class="col mb-3">
-            <label for="alu_grado">Arma</label>
-            <select name="alu_grado" id="alu_grado" class="form-control" required>
+            <label for="alu_arma">Arma del Alumno</label>
+            <select name="alu_arma" id="alu_arma" class="form-control" required>
                 <option value="">SELECCIONE...</option>
                 <?php foreach ($armas as $arma) : ?>
                     <option value="<?= $arma['arm_id'] ?>"> <?= $arma['arm_nombre'] . ""  ?></option>
