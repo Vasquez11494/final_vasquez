@@ -31,4 +31,27 @@ class Alumno extends Conexion
         return $resultado; 
     }
 
+    public function buscar(...$columnas){
+        $cols = count($columnas) > 0 ? implode(',', $columnas) : '*';
+        $sql = "SELECT $cols FROM alumnos where cli_situacion =  1 ";
+
+        if($this->alu_nombre != ''){
+            $sql .= " AND alu_nombre like '%$this->alu_nombre%' ";
+        }
+        if($this->alu_apellido != ''){
+            $sql .= " AND alu_apellido like '%$this->alu_apellido%' ";
+        }
+        if($this->alu_grado != ''){
+            $sql .= " AND alu_grado = $this->alu_grado ";
+        }
+        if($this->alu_arma != ''){
+            $sql .= " AND alu_arma = $this->alu_arma ";
+        }
+        if($this->alu_nacionalidad != ''){
+            $sql .= " AND alu_nacionalidad = $this->alu_nacionalidad ";
+        }
+        $resultado = self::servir($sql);
+        return $resultado;
+    }
+
 }

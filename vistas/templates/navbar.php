@@ -11,8 +11,8 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="alumnosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-person-square me-2"></i></i>Alumnos</a>
                     <ul class="dropdown-menu" aria-labelledby="alumnosDropdown">
-                        <li><a class="dropdown-item" href="#"><i class="bi bi-person-plus me-2 "></i>Crear Alumnos</a></li>
-                        <li><a class="dropdown-item" href="#"><i class="bi bi-eye-fill me-2"></i>Buscar Alumnos</a></li>
+                        <li><a class="dropdown-item" href="../alumnos/index.php"><i class="bi bi-person-plus me-2 "></i>Crear Alumnos</a></li>
+                        <li><a class="dropdown-item" href="../alumnos/buscar.php"><i class="bi bi-eye-fill me-2"></i>Buscar Alumnos</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
