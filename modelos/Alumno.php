@@ -75,4 +75,11 @@ class Alumno extends Conexion
         $resultado = $this->ejecutar($sql);
         return $resultado; 
     }
+
+    public function eliminar(){
+        $sql = " UPDATE alumnos SET alu_situacion = 0 WHERE alu_id = $this->alu_id ";
+        
+        $resultado = $this->ejecutar($sql);
+        return $resultado;
+    }
 }

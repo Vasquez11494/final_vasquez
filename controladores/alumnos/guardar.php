@@ -46,7 +46,7 @@ $alertas = ['danger', 'success', 'warning'];
   
 include_once '../../vistas/templates/header.php'; ?>
 
-<div class="row justify-content-center">
+<div class="row justify-content-center mt-3">
     <div class="col-lg-6 alert alert-<?=$alertas[$resultado['codigo']] ?>" role="alert">
         <?= $resultado['mensaje'] ?>
     </div>
