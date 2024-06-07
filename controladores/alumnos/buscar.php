@@ -24,7 +24,7 @@ try {
 
 } catch (PDOException $pe) {
     $resultado = [
-        'mensaje' => 'OCURRIO UN ERROR BUSCANDO A LA BD',
+        'mensaje' => 'OCURRIO UN ERROR BUSCANDO EN LA BASE DE DATOS',
         'detalle' => $pe->getMessage(),
         'codigo' => 0
     ];

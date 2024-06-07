@@ -59,7 +59,6 @@ class Alumno extends Conexion
         return $resultado;
     }
 
-    
     public function buscarId($id){
             
         $sql = "SELECT * FROM alumnos  where alu_situacion = 1 AND alu_id = $id ";
@@ -68,5 +67,12 @@ class Alumno extends Conexion
         // exit;
         $resultado =  array_shift(self::servir($sql));
         return $resultado;
+    }
+
+    public function modificar(){
+        $sql = "UPDATE ALUMNOS SET alu_nombre = '$this->alu_nombre', alu_apellido = '$this->alu_apellido', alu_grado = '$this->alu_grado', alu_arma = '$this->alu_arma' , alu_nacionalidad = '$this->alu_nacionalidad' WHERE alu_situacion = 1 AND alu_id = $this->alu_id ";
+  
+        $resultado = $this->ejecutar($sql);
+        return $resultado; 
     }
 }

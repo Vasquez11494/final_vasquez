@@ -19,7 +19,7 @@ $grados = $buscargrado->mostrarGrados();
 
 <h1 class="text-center mt-3">Alumno a Modificar</h1>
 <div class="row justify-content-center mt-3">
-    <form action="../../controladores/alumnos/guardar.php" method="POST" class="border bg-light shadow rounded p-4 col-lg-6">
+    <form action="../../controladores/alumnos/modificar.php" method="POST" class="border bg-light shadow rounded p-4 col-lg-6">
         <div class="row mb-3">
             <div class="col">
                 <input type="hidden" name="alu_id" id="alu_id" value="<?= $Alumno['alu_id'] ?>" class="form-control" required>
