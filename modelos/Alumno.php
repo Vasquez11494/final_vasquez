@@ -25,5 +25,10 @@ class Alumno extends Conexion
 
     }
 
+    public function guardar(){
+        $sql = "INSERT into alumnos (alu_nombre, alu_apellido, alu_grado, alu_arma, alu_nacionalidad) values ('$this->alu_nombre','$this->alu_apellido','$this->alu_grado','$this->alu_arma','$this->alu_nacionalidad')";
+        $resultado = $this->ejecutar($sql);
+        return $resultado; 
+    }
 
 }

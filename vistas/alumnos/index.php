@@ -49,6 +49,12 @@ $grados = $buscargrado->mostrarGrados();
         </div>
         <div class="row mb-3">
             <div class="col">
+                <label for="alu_nacionalidad">Nacionalidad del Alumno</label>
+                <input type="text" name="alu_nacionalidad" id="alu_nacionalidad" class="form-control" placeholder="Ej. Guatemalteco" require>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col">
                 <button type="submit" class="btn btn-info w-100">Guardar</button>
             </div>
         </div>
