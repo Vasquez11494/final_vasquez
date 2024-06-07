@@ -53,8 +53,8 @@ class Alumno extends Conexion
             $sql .= " AND alu_nacionalidad = $this->alu_nacionalidad ";
         }
 
-        //   echo $sql;
-        //   exit;
+        // echo $sql;
+        // exit;
         $resultado = self::servir($sql);
         return $resultado;
     }

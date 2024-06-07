@@ -13,7 +13,7 @@ try {
     $_POST['alu_arma'] = filter_var($_POST['alu_arma'], FILTER_VALIDATE_INT);
     $_POST['alu_nacionalidad'] = htmlspecialchars($_POST['alu_nacionalidad']);
     
-    
+
     $buscarAlumno = new Alumno($_POST);
     $buscar = $buscarAlumno->buscar();
     // var_dump($buscar);
