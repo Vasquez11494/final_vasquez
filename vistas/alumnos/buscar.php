@@ -16,7 +16,7 @@ $grados = $buscargrado->mostrarGrados();
 <h1 class="text-center mt-3">Buscar Alumno</h1>
 <hr>
 <div class="row justify-content-center mt-3">
-    <form action="" method="POST" class="border bg-light shadow-lg rounded p-4 col-lg-6">
+    <form action="../../controladores/alumnos/buscar.php" method="POST" class="border bg-light shadow-lg rounded p-4 col-lg-6">
         <div class="row mb-3">
             <div class="col">
                 <label for="alu_nombre">Nombre del Alumno</label>
@@ -50,7 +50,7 @@ $grados = $buscargrado->mostrarGrados();
         <div class="row mb-3">
             <div class="col">
                 <label for="alu_nacionalidad">Nacionalidad del Alumno</label>
-                <input type="text" name="alu_nacionalidad" id="alu_nacionalidad" class="form-control" placeholder="Ej. Guatemalteco" >
+                <input type="text" name="alu_nacionalidad" id="alu_nacionalidad" class="form-control" >
             </div>
         </div>
         <div class="row mb-3">
