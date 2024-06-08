@@ -55,7 +55,12 @@ $grados = $buscargrado->mostrarGrados();
         </div>
         <div class="row mb-3">
             <div class="col">
-                <button type="submit" class="btn btn-info w-100">AGREGAR</button>
+                <button type="submit" class="btn btn-primary w-100">AGREGAR</button>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col">
+                <a href="/final_vasquez/controladores/alumnos/buscar.php" class="btn btn-info w-100">VER ALUMNOS INGRESADOS</a>
             </div>
         </div>
     </form>

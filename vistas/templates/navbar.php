@@ -18,7 +18,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="productosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-clipboard2-pulse-fill me-2"></i>Materias</a>
                     <ul class="dropdown-menu" aria-labelledby="productosDropdown">
-                        <li><a class="dropdown-item" href="#"><i class="bi bi-plus-circle-fill me-2"></i>Crear Materias</a></li>
+                        <li><a class="dropdown-item" href="/final_vasquez/vistas/materias/index.php"><i class="bi bi-book me-2"></i>Crear Materias</a></li>
                         <li><a class="dropdown-item" href="#"><i class="bi bi-eye-fill me-2"></i>Ver Materias</a></li>
                     </ul>
                 </li>
