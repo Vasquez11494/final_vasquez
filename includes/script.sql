@@ -51,3 +51,11 @@ INSERT INTO armas (arm_nombre) VALUES ("Policia Militar");
 INSERT INTO armas (arm_nombre) VALUES ("Transmisiones");
 INSERT INTO armas (arm_nombre) VALUES ("Intendencia");
 INSERT INTO armas (arm_nombre) VALUES ("Material de Guerra");
+
+-- CREANDO LA TABLA DE MATERIAS
+
+CREATE TABLE MATERIAS (
+    MATERIA_ID SERIAL NOT NULL,
+    MATERIA_NOMBRE VARCHAR(50),
+    PRIMARY KEY (MATERIA_ID),
+);
