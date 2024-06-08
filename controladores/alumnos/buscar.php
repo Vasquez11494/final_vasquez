@@ -88,7 +88,7 @@ include_once '../../vistas/templates/header.php'; ?>
                         <?php endforeach ?>
                     <?php else : ?>
                         <tr>
-                            <td colspan="5">No hay productos registrados</td>
+                            <td colspan="6">No hay Alumnos registrados</td>
                         </tr>  
                     <?php endif ?>
                 </tbody>

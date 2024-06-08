@@ -30,4 +30,19 @@ class Materia extends Conexion{
         return $resultado;
     }
 
+    public function BuscarID($ID){
+            
+        $sql = "SELECT * FROM materias  where materia_situacion = 1 AND materia_id = $ID ";
+
+        $resultado =  array_shift(self::servir($sql));
+        return $resultado;
+    }
+
+    
+    public function modificar(){
+        $sql = "UPDATE materias SET materia_nombre = '$this->materia_nombre' WHERE materia_situacion = 1 AND materia_id= $this->materia_id ";
+  
+        $resultado = $this->ejecutar($sql);
+        return $resultado; 
+    }
 }

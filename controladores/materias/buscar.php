@@ -67,8 +67,8 @@ include_once '../../vistas/templates/header.php'; ?>
                                         Acciones
                                     </button>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="../../vistas/alumnos/modificar.php?alu_id=<?= base64_encode($value['alu_id'])?>"><i class="bi bi-pencil-square me-2"></i>Modificar</a></li>
-                                        <li><a class="dropdown-item" href="eliminar.php?alu_id=<?= base64_encode( $value['alu_id'])?>"><i class="bi bi-trash me-2"></i>Eliminar</a></li>
+                                        <li><a class="dropdown-item" href="../../vistas/materias/modificar.php?materia_id=<?= base64_encode($materia['materia_id'])?>"><i class="bi bi-pencil-square me-2"></i>Modificar</a></li>
+                                        <li><a class="dropdown-item" href="eliminar.php?materia_id=<?= base64_encode( $materia['materia_id'])?>"><i class="bi bi-trash me-2"></i>Eliminar</a></li>
                                     </ul>
                                 </div>
                                 </td>
@@ -76,7 +76,7 @@ include_once '../../vistas/templates/header.php'; ?>
                         <?php endforeach ?>
                     <?php else : ?>
                         <tr>
-                            <td colspan="3">No hay productos registrados</td>
+                            <td colspan="3">No hay materias Registradas</td>
                         </tr>  
                     <?php endif ?>
                 </tbody>
