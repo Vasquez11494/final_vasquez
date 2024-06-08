@@ -23,4 +23,11 @@ class Materia extends Conexion{
         return $resultado;
     }
 
+    public function VerMaterias (){
+        $sql = "SELECT * FROM materias";
+
+        $resultado =  self::servir($sql);
+        return $resultado;
+    }
+
 }
