@@ -65,7 +65,7 @@ include_once '../../vistas/templates/header.php'; ?>
                     </tr>
                 </thead>
                 <tbody>
-                    <?php if($resultado['codigo'] == 1 ) : ?>
+                    <?php if($resultado['codigo'] == 1  && count($buscar) > 0 ): ?>
                         <?php foreach ($buscar as $key => $value) : ?>
                             <tr>
                                 <td><?= $key + 1 ?></td>
@@ -80,7 +80,7 @@ include_once '../../vistas/templates/header.php'; ?>
                                     </button>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="../../vistas/alumnos/modificar.php?alu_id=<?= base64_encode($value['alu_id'])?>"><i class="bi bi-pencil-square me-2"></i>Modificar</a></li>
-                                        <li><a class="dropdown-item" href="eliminar.php?alu_id=<?= base64_encode( $value['alu_id'])?>"><i class="bi bi-trash me-2"></i>Eliminar</a></li>
+                                        <li><a class="dropdown-item" href="/final_vasquez/controladores/materias/eliminar.php?alu_id=<?= base64_encode( $value['alu_id'])?>"><i class="bi bi-trash me-2"></i>Eliminar</a></li>
                                     </ul>
                                 </div>
                                 </td>

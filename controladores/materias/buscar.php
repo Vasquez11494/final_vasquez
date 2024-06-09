@@ -1,7 +1,7 @@
 <?php
-// ini_set('display_errors', '1');
-// ini_set('display_startup_errors', '1');
-// error_reporting(E_ALL);
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
+error_reporting(E_ALL);
 
 require '../../modelos/Materia.php';
 
@@ -56,7 +56,7 @@ include_once '../../vistas/templates/header.php'; ?>
                     </tr>
                 </thead>
                 <tbody>
-                    <?php if($resultado['codigo'] == 1 ) : ?>
+                    <?php if($resultado['codigo'] == 1 && count($Materias) > 0  ) : ?>
                         <?php foreach ($Materias as $key => $materia) : ?>
                             <tr>
                                 <td><?= $key + 1 ?></td>

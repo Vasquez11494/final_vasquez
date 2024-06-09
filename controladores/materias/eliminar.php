@@ -1,26 +1,23 @@
 <?php
 
-require '../../modelos/Alumno.php';
-$_GET['alu_id'] = filter_var(base64_decode($_GET['alu_id']), FILTER_SANITIZE_NUMBER_INT);
+require '../../modelos/Materia.php';
 
+$_GET['materia_id'] = filter_var(base64_decode($_GET['materia_id']), FILTER_SANITIZE_NUMBER_INT);
 
-$AlumnoEliminar = new Alumno($_GET);
-
-print_r($AlumnoEliminar);
-exit;
+$EliminarMateria = new Materia($_GET);
 
 try {
 
-    $Eliminar = $AlumnoEliminar->eliminar();
+    $Eliminar = $EliminarMateria->eliminar();
 
     $resultado = [
-        'mensaje' => 'ALUMNOS ELMINADO EXITOSAMENTE',
+        'mensaje' => 'MATERIA ELMINADO EXITOSAMENTE',
         'codigo' => 1
     ];
 
 } catch (PDOException $pe) {
     $resultado = [
-        'mensaje' => 'OCURRIO UN ERROR ELIMINANDO EL ALUMNO EN LA BASE DE DATOS',
+        'mensaje' => 'OCURRIO UN ERROR ELIMINANDO LA MATERIA EN LA BASE DE DATOS',
         'detalle' => $pe->getMessage(),
         'codigo' => 0
     ];
@@ -44,6 +41,6 @@ include_once '../../vistas/templates/header.php'; ?>
 </div>
 <div class="row justify-content-center">
     <div class="col-lg-6">
-        <a href="../../controladores/alumnos/buscar.php" class="btn btn-primary w-100">Regresar</a>
+        <a href="../../controladores/materias/buscar.php" class="btn btn-primary w-100">Regresar</a>
     </div>
 </div>

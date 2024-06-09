@@ -1,6 +1,6 @@
 <?php
 
-require 'Conexion.php';
+require_once 'Conexion.php';
 
 class Materia extends Conexion{
 
@@ -24,7 +24,7 @@ class Materia extends Conexion{
     }
 
     public function VerMaterias (){
-        $sql = "SELECT * FROM materias";
+        $sql = "SELECT * FROM materias WHERE materia_situacion =1";
 
         $resultado =  self::servir($sql);
         return $resultado;
@@ -42,6 +42,13 @@ class Materia extends Conexion{
     public function modificar(){
         $sql = "UPDATE materias SET materia_nombre = '$this->materia_nombre' WHERE materia_situacion = 1 AND materia_id= $this->materia_id ";
   
+        $resultado = $this->ejecutar($sql);
+        return $resultado; 
+    }
+        
+    public function eliminar(){
+        $sql = "UPDATE materias SET materia_situacion = 0 WHERE materia_id = $this->materia_id ";
+
         $resultado = $this->ejecutar($sql);
         return $resultado; 
     }
