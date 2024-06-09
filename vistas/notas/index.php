@@ -10,7 +10,7 @@ $alumnos = $alumno->buscar();
 
 
 include_once '../templates/header.php'; ?>
-<h1 class="text-center mt-3">Seleccione al Alumno para ingresar sus notas</h1>
+<h1 class="text-center mt-3">Seleccione al Alumno </h1>
 <div class="row justify-content-center mt-3">
     <form action="/final_vasquez/vistas/notas/ingresarNotas.php" method="POST" class="border bg-light shadow rounded p-4 col-lg-6">
         <div class="col">
@@ -19,7 +19,7 @@ include_once '../templates/header.php'; ?>
                 <option value="">SELECCIONE...</option>
                 <?php foreach ($alumnos as $alumno) : ?>
                     <option value="<?= $alumno['alu_id'] ?>"> <?= $alumno['nombre_completo'] ?></option>
-                <?php endforeach ?>
+                <?php endforeach ?>  
             </select>
         </div>
         <div class="row justify-content-center mt-3">

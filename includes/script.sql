@@ -65,7 +65,7 @@ CREATE TABLE notas (
     nota_id SERIAL NOT NULL,
     nota_alu_id INT NOT NULL,
     nota_materia_id INT NOT NULL,
-    nota DECIMAL(3, 2) NOT NULL,
+    nota DECIMAL(5, 2) NOT NULL,
     PRIMARY KEY (nota_id),
     FOREIGN KEY (nota_alu_id) REFERENCES alumnos (alu_id),
     FOREIGN KEY (nota_materia_id) REFERENCES materias (materia_id),
