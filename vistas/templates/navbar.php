@@ -36,7 +36,7 @@
             </ul>
         </div>
         <div class="navbar-text">
-            <b>Escuela de Informatica</b>
+            <b>Escuela de Informatica y Tec.</b>
         </div>
     </div>
 </nav>
