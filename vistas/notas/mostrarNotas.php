@@ -3,7 +3,7 @@
 // ini_set('display_startup_errors', '1');
 // error_reporting(E_ALL);
 
-require '../../vistas/templates/header.php';
+require '../templates/header.php';
 require '../../modelos/Alumno.php';
 require '../../modelos/Nota.php';
 require '../../modelos/Materia.php';
@@ -64,3 +64,4 @@ $NotasAlumno = $notas->NotasAlumno($_POST['alu_id']);
         </div>
     </div>
 </div>
+<?php require '../templates/footer.php'; ?>

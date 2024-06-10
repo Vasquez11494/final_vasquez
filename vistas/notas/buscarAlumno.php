@@ -23,7 +23,7 @@ include_once '../templates/header.php'; ?>
             </select>
         </div>
         <div class="row justify-content-center mt-3">
-            <button type="submit" class="btn btn-primary">Ingresar Notas</button>
+            <button type="submit" class="btn btn-success">Ver Tarjeta de Calificaciones</button>
         </div>
     </form>
 </div>
