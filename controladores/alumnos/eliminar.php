@@ -6,8 +6,6 @@ $_GET['alu_id'] = filter_var(base64_decode($_GET['alu_id']), FILTER_SANITIZE_NUM
 
 $AlumnoEliminar = new Alumno($_GET);
 
-print_r($AlumnoEliminar);
-exit;
 
 try {
 

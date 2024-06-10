@@ -57,7 +57,6 @@ $NotasAlumno = $notas->NotasAlumno($_POST['alu_id']);
                         </tbody>
                     </table>
                     <p class="text-center"><strong>Promedio:</strong> <?= number_format($promedio, 2) ?></p>
-                    <p class="text-center"><strong>Resultado Final:</strong> <?= ($promedio >= 70) ? 'Ganó' : 'Perdió' ?></p>
                 <?php else : ?>
                     <p class="card-text text-center">No hay notas registradas para este alumno.</p>
                 <?php endif ?>
