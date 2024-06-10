@@ -52,4 +52,14 @@ class Materia extends Conexion{
         $resultado = $this->ejecutar($sql);
         return $resultado; 
     }
+
+    public function NotasAlumno($ID)
+    {
+
+        $sql = "SELECT materia_nombre, nota from notas INNER JOIN materias ON  nota_materia_id = materia_id WHERE nota_alu_id = $ID ";
+        $resultado =  self::servir($sql);
+        return $resultado;
+    }
+
+
 }

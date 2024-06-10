@@ -27,7 +27,7 @@
                     <ul class="dropdown-menu" aria-labelledby="historiaDropdown">
                         <li><a class="dropdown-item" href="/final_vasquez/vistas/notas/index.php"><i class="bi bi-file-earmark-arrow-up me-2"></i>Ingresar Calificaciones</a></li>
                         <li><a class="dropdown-item" href="/final_vasquez/vistas/notas/index.php"><i class="bi bi-pencil me-2"></i>Modificar Calificaciones</a></li>
-                        <li><a class="dropdown-item" href="#"><i class="bi bi-eye-fill me-2"></i>Ver Tarjeta de Calificaciones</a></li>
+                        <li><a class="dropdown-item" href="/final_vasquez/vistas/notas/buscarAlumno.php"><i class="bi bi-eye-fill me-2"></i>Ver Tarjeta de Calificaciones</a></li>
                     </ul>
                 </li>
             </ul>
